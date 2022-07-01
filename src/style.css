@@ -1,0 +1,199 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.App {
+  height: 200px;
+  display: -webkit-box;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 1440px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.container {
+  width: 80%;
+}
+
+header {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+header p {
+  color: #63687e;
+}
+
+header .theme {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+header label {
+  text-indent: -9999px;
+  width: 50px;
+  height: 20px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+header label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 10px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+}
+
+header input:checked + label {
+  background: -webkit-gradient(linear, right top, left top, from(#3eda82), to(#378fe6));
+  background: linear-gradient(to left, #3eda82, #378fe6);
+}
+
+header input:checked + label:after {
+  left: calc(100% - 4px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: #1e202a;
+}
+
+header label:active:after {
+  width: 20px;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-content #facebook-main {
+  border-top: 4px solid #198ff5;
+}
+
+.main-content #twitter-main {
+  border-top: 4px solid #1ca0f2;
+}
+
+.main-content #instagram-main {
+  border-top: 4px solid transparent;
+  border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  border-image: linear-gradient(to right, #fdc468, #df4996);
+  border-image-slice: 1;
+}
+
+.main-content #youtube-main {
+  border-top: 4px solid #c4032a;
+}
+
+.main-content .title-main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.main-content .title-main .username {
+  margin-left: 10px;
+  color: #63687e;
+}
+
+.main-content .num-followers {
+  text-align: center;
+}
+
+.main-content .num-followers .text-followers {
+  letter-spacing: 6px;
+  color: #63687e;
+}
+
+.rating {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.rating-up .rating-text {
+  margin-left: 4px;
+  color: #1db489;
+}
+
+.rating-down .rating-text {
+  margin-left: 5px;
+  color: #dc414c;
+}
+
+.overview {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+}
+
+.overview .overview-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.overview .overview-header p {
+  font-size: 12px;
+  color: #63687e;
+}
+
+.overview .overview-bottom {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.attribution {
+  text-align: center;
+}
